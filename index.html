@@ -4,16 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Connect Nodes</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Lato:wght@300&family=Noto+Sans:wght@700&family=Press+Start+2P&family=Roboto+Mono:wght@100&family=Silkscreen&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
     <div>
         <div class="input">
-
+            <div class="left">
+                <form id="myForm">
+                    <p>x=<input type="text" name="x"></p>
+                    
+                    <p>y=<input type="text" name="y"></p>
+                    
+                    <button id="addPoint">Enter</button>
+                </form>
+            </div>
+            <div class="right"> 
+                <ul id="points">
+                </ul>
+            </div>
         </div>
         <div class="output">
-            
+            <div class="plot"></div>
+            <div class="calc">
+                <button id="calcCost">Calculate</button>
+                <p>
+                    Cost=<span id="cost">_____</span>
+                </p>
+            </div>
         </div>
     </div>
 </body>
+<script src="index.js"></script>
 </html>
