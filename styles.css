@@ -9,6 +9,7 @@ body{
     font-family: 'Silkscreen', cursive;
     font-family: 'Ubuntu', sans-serif;
     font-size: large;
+    padding: 1%;
 }
 
 input{
@@ -37,3 +38,27 @@ button{
     font-size: large;
     border: 0;
 }
+
+canvas{
+    width: 600;
+    height: 700;
+}
+
+#random{
+    display: none;
+}
+
+.input{
+    width: 25%;
+    float: left;
+}
+
+.output{
+    width: 60%;
+    float: left;
+}
+
+.right{
+    height: 400px;
+    overflow: scroll;
+  }

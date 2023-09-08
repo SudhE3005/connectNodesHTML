@@ -14,12 +14,18 @@
         <div class="input">
             <div class="left">
                 <form id="myForm">
-                    <p>x=<input type="text" name="x"></p>
+                    <p>x=<input type="number" name="x"></p>
                     
-                    <p>y=<input type="text" name="y"></p>
+                    <p>y=<input type="number" name="y"></p>
                     
                     <button id="addPoint">Enter</button>
                 </form>
+                <button id="clearPoints">Clear</button>
+                <form id="random">
+                    <input type="number" name="count" value="0">
+                </form>
+                <button id="randomPoints">Randomize</button>
+                
             </div>
             <div class="right"> 
                 <ul id="points">
@@ -27,7 +33,10 @@
             </div>
         </div>
         <div class="output">
-            <div class="plot"></div>
+            <div class="plot">
+                <canvas id="myCanvas" width="900" height="500" style="border:1px solid #000000;">
+                </canvas>
+            </div>
             <div class="calc">
                 <button id="calcCost">Calculate</button>
                 <p>
