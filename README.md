@@ -1,4 +1,4 @@
-# connectNodesHTML
+# connectNodes
 
 This web application calculates the Minimum Spanning Tree (MST) using Prim's algorithm for a set of nodes, helping you find the most cost-efficient way to connect them.
 
