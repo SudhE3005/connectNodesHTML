@@ -14,7 +14,7 @@ function renderList(){
     ul.innerHTML="";
     clearCanvas();
     for(var i=0; i<points.length; i++){
-        ul.innerHTML+="<li>"+(i+1)+". x="+points[i].x+" y="+points[i].y+"</li>";
+        ul.innerHTML+="<li> x="+points[i].x+" y="+points[i].y+"</li>";
         drawPoints(points[i].x,points[i].y,(i+1));
     }  
 }
@@ -32,11 +32,9 @@ document.getElementById("randomPoints").addEventListener('click',event=>{
     var p= new Array();
     points=p;
     document.getElementById("random").style.display="block";
-    var ul = document.getElementById("points");
-    ul.innerHTML="";
     for (var i = 0; i < document.getElementById("random").elements[0].value; i++) {
-        var xx = Math.floor(Math.random() * 900);
-        var yy = Math.floor(Math.random() * 500);
+        var xx = Math.floor(Math.random() * 880)+10;
+        var yy = Math.floor(Math.random() * 580)+10;
         points.push({
             x: xx,
             y: yy
@@ -60,6 +58,7 @@ function clearCanvas(){
     const canvas = document.getElementById("myCanvas");
     const ctx = canvas.getContext("2d");
     ctx.clearRect(0,0,canvas.width,canvas.height);
+    document.getElementById("cost").innerHTML="";
 }
 
 const minHeap = () => {
