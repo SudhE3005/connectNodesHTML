@@ -23,6 +23,7 @@ document.getElementById("clearPoints").addEventListener('click',event=>{
     var p= new Array();
     points=p;
     var ul = document.getElementById("points");
+    document.getElementById("random").style.display="none";
     ul.innerHTML="";
     clearCanvas();
     event.preventDefault();
